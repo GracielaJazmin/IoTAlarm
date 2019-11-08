@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
-import Registro from '../pages/registro'
 
-const Home = () => (
+
+const Registro = () => (
   <div>
     <Head>
       <title>Home</title>
@@ -11,10 +11,10 @@ const Home = () => (
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
     </Head>
     <Nav/>
-    <div className="container-all">
-      <div className ="container form">
+    <div className="container">
+      <div className ="container form col-12 col-md-12 col-ms-12">
       <img src="/login-png-1.png" className="img-thumbnail" alt="Responsive image"></img>
-      <h1>Iniciar Sesion</h1>
+      <h1>Registro</h1>
       <form>
         <label forhtml="">Email</label>
         <input type = "text"></input>
@@ -23,7 +23,7 @@ const Home = () => (
         <input type ="submit" className="btn btn-primary" value = "iniciar"></input>
         </form>
         <span className = "text-footer">¿Aún no te has registrado?
-        <a href= "/registro">Registrate</a></span>
+        <a href= "/index">Regresar</a></span>
       </div>
     </div>
 
@@ -66,4 +66,4 @@ const Home = () => (
   </div>
 )
 
-export default Home
+export default Registro
