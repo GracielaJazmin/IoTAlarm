@@ -12,6 +12,7 @@ const Registro = () => (
     </Head>
     <Nav/>
     <div className="container">
+    <div className ="row col-md-12">
       <div className ="container form col-12 col-md-12 col-ms-12">
       <img src="/login-png-1.png" className="img-thumbnail" alt="Responsive image"></img>
       <h1>Registro</h1>
@@ -24,6 +25,7 @@ const Registro = () => (
         </form>
         <span className = "text-footer">¿Aún no te has registrado?
         <a href= "/index">Regresar</a></span>
+      </div>
       </div>
     </div>
 

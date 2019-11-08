@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import Nav from '../components/nav'
 import Registro from '../pages/registro'
 
 const Home = () => (
@@ -10,20 +9,29 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
     </Head>
-    <Nav/>
-    <div className="container-all">
-      <div className ="container form">
-      <img src="/login-png-1.png" className="img-thumbnail" alt="Responsive image"></img>
-      <h1>Iniciar Sesion</h1>
-      <form>
-        <label forhtml="">Email</label>
-        <input type = "text"></input>
-        <label forhtml =""> Contraseña</label>
-        <input type = "password"></input>
-        <input type ="submit" className="btn btn-primary" value = "iniciar"></input>
-        </form>
-        <span className = "text-footer">¿Aún no te has registrado?
-        <a href= "/registro">Registrate</a></span>
+    
+    <div className="container-all col-md-12 m-5">
+      <div className ="container form m-5">
+
+        <img src="/login-png-1.png" className="img-thumbnail m-5" alt="Responsive image"></img>
+        
+        <h1 className="">Iniciar Sesion</h1>
+          <form>
+            <div className="form-group">
+              <label forhtml="exampleInputEmail1">Email</label>
+              <input className="form-control" type="email" id="email" placeholder="Enter email"></input>
+            </div>
+
+            <div class="form-group">
+              <label forhtml ="exampleInputEmail1"> Contraseña</label>
+              <input className="form-control" type="password" id="password" placeholder="Enter contraseña"></input>              
+            </div>            
+          </form>
+
+          <input type ="submit" className="btn btn-primary mb-5" value = "iniciar"></input>
+          
+          <span className = "text-footer">¿Aún no te has registrado?
+          <a href= "/registro">Registrate</a></span>
       </div>
     </div>
 
