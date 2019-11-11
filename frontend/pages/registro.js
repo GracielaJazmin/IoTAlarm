@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import Home from '../pages/index'
 
 const Registro = () => (
   <div className ="inicio" id="inicio">
@@ -9,9 +10,7 @@ const Registro = () => (
     <link rel='icon' href='/favicon.ico' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
   </Head>
-  
-  <Header authenticated={false} pathname={url.pathname} />
-  {error && <Error message={error} />}
+
   <div className="container-all col-md-12" id="form">
   <div className = "row">
     <div  className ="container-form shadow-lg p-3 rounded text-white ">
@@ -19,7 +18,7 @@ const Registro = () => (
       <img src="/man-user.png" className="imagen" alt="Responsive image"></img>
       
       <h1 className="text-center">Register </h1>
-        <form onSubmit={this.handleSubmit} className = "">
+        <form  className = "">
           <div className="form-group">
             <label forhtml="">Username</label>
             <input className="formcontrol" autoComplete="off" type="text" id="email" placeholder="Username"></input>
@@ -45,7 +44,7 @@ const Registro = () => (
         <input type ="submit" className="btn btn-primary mb-5 d-flex justify-content-center" value = "SEND"></input>
         
         <span className = "text-footer">
-        <a href= "/login">Login In</a></span>
+        <a href= "/index">Login In</a></span>
     </div>
     </div>
     <div  className ="piepagina">
