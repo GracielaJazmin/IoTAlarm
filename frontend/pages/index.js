@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Registro from '../pages/registro';
-import Sensores from '../pages/sensores'
+import Sensores from '../pages/sensores';
+import UserContext from '../src/UserContext'
 
 const Home = () => (
 
